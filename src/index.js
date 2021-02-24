@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ChildrenMethodTest from './ChildrenMethodTest';
 import './index.css';
 function Square (props) {
   return (
@@ -107,6 +108,10 @@ class Game extends React.Component {
           <div>{status}</div>
           <ol>{moves}</ol>
         </div>
+        <ChildrenMethodTest>
+          <span key='11'><span key='11'>11</span><span key='22'>22</span></span>
+          <span key='22'>22</span>
+        </ChildrenMethodTest>
       </div>
     );
   }
